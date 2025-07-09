@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign-Up page</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div class="form-container">
+            <h1>Create an Account</h1>
+            <form action="#">
+                  <label for="name">Full Name</label>
+                  <input type="text" placeholder="Full Name" required>
+                  <label for="email">Email Address</label>
+                  <input type="email" placeholder="name@gmail.com" required>
+                  <div class="gender-selection">
+                        <label for="gender">
+                              <input type="radio" id="male" name="gender" value="male"> Male
+                        </label>
+                        <label for="gender">
+                              <input type="radio" id="female" name="gender" value="female"> Female
+                        </label>
+                        <label for="gender">
+                              <input type="radio" id="prefer-not" name="gender" value="prefer-not"> Prefer not to say
+                        </label>
+                  </div>
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob" placeholder="DD/MM/YYYY">
+                  <label for="dob">City:</label>
+                  <select name="Current Location" id="state" aria-placeholder="Current Location">
+                        <option value=""><label for="Current Location">Current Location</label></option>
+                        <option value="state">Lagos State</option>
+                        <option value="state">Rivers State</option>
+                        <option value="state">Delta</option>
+                        <option value="state">Bayelsa</option>
+                        <option value="state">Abuja</option>
+                        <option value="state">Kaduna</option>
+                        <option value="state">Kano</option>
+                        <option value="state">Enugu</option>
+                        <option value="state">Katsina</option>
+                        <option value="state">Oyo</option>
+                        <option value="state">Abia</option>
+                  </select>
+                  <label for="">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                  <!-- <p class="hint">Create a strong password</p> -->
+                  <label for="">Confirm Password</label>
+                  <input type="password" placeholder="Re-enter password" required>
+                  <label class="form-footer">
+                        <input type="checkbox">Agree to the <a href="">Terms & condition</a>
+                  </label>
+                  <button type="submit">Sign-Up</button>
+                  <p class="redirect-link"><a href="../Login Page/index.html"><span>Already have an account? </span>Log in</a></p>
+            </form>
+      </div>
+</body>
+</html>

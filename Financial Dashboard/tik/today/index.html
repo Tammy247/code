@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div id="Food">
+            <div class="food">Beans</div>
+            button
+            <button>Yam</button>
+            <button>Garri</button>
+      </div>
+
+      <script>
+            // EVENTS IN DOM
+            // A DOM allows you to capture event such as keys key presses etc. to mmake a web page interactive
+            // Array Methods
+            // Events listerner allows you to execute codce when a specific event occurs 
+            // addEventListener(): Used to Bind event
+            // Common DOM Events: Click, mouseover, Keyup and Load 
+
+
+            // Parent node 
+            let element = document.querySelector(".sub")
+            console.log(element.parentNode)
+
+            // Remove Method and Remove child method: Removing element in the DOM using the removing method
+            // Javascript helps in validating inputs and handles form submission
+
+            let form = document.querySelector("form")
+            form.addEventListener("sumbit", (e) => {
+                  e.preventDefault()
+                  let userName = document.getElementById("").value;
+                  if (userName === "" || userName < 5){
+                        alert("Please Enter  valid Username")
+                  }
+            })
+      </script>
+</body>
+</html>

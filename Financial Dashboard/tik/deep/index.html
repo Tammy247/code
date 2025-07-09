@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Login Form Container -->
+    <div class="form-container" id="login-container">
+        <h1>Welcome Back</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email Address</label>
+                <input type="email" id="login-email" value="name@gmail.com" readonly>
+            </div>
+           
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <div class="password-strength">
+                    <div class="strength-meter" id="login-strength"></div>
+                </div>
+            </div>
+           
+            <button type="submit">Log In</button>
+            <a href="#" class="secondary-link" id="show-signup">Don't have an account? Sign-up</a>
+            <a href="#" class="secondary-link">Forgot Password?</a>
+        </form>
+    </div>
+    <!-- Signup Form Container (initially hidden) -->
+    <div class="form-container" id="signup-container" style="display: none;">
+        <h1>Create an Account</h1>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="signup-email">Email Address</label>
+                <input type="email" id="signup-email" placeholder="name@gmail.com" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="gender-selection">
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say
+                    </label>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="city">City</label>
+                <select id="city" required>
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="new-york">New York</option>
+                    <option value="london">London</option>
+                    <option value="tokyo">Tokyo</option>
+                    <!-- Add more cities as needed -->
+                </select>
+            </div>
+           
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a strong password" required>
+                <p class="hint">Use at least 8 characters with a mix of letters, numbers, and symbols</p>
+                <div class="password-strength">
+                    <div class="strength-meter" id="signup-strength"></div>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+                <p class="hint" id="password-match-hint"></p>
+            </div>
+           
+            <label class="checkbox-label">
+                <input type="checkbox" id="agree-terms" required>
+                I agree to the <a href="#" style="color: #3498db;">Terms & Conditions</a>
+            </label>
+           
+            <button type="submit">Sign Up</button>
+            <a href="#" class="secondary-link" id="show-login">Already have an account? Log in</a>
+        </form>
+    </div>
+    <script src="index.js">
+        // JavaScript will go here
+        // (The JavaScript code provided below will be placed here)
+    </script>
+</body>
+</html>
